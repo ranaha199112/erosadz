@@ -57,12 +57,12 @@ export default function Home() {
             <div className="mt-6 flex justify-center items-center gap-[48px]">
               <button
                 type="button"
-                className="bg-[#4FA74F] w-10 h-10 rounded-full"
+                className="w-10 h-10 rounded-full bg-[#4FA74F]"
               ></button>
               <button
                 type="button"
                 onClick={() => setShowCall(false)}
-                className="bg-[#FA5858] w-10 h-10 flex justify-center items-center rounded-full"
+                className="w-10 h-10 flex justify-center items-center rounded-full bg-[#FA5858]"
               >
                 <span className="mt-2">
                   <IconPhone />
