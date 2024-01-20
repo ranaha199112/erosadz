@@ -71,9 +71,9 @@ export default function Home() {
             </div>
           </div>
         ) : (
-          <div className=" bg-white md:w-[400px] py-4 shadow-around rounded-lg">
+          <div className=" bg-white md:w-[400px] shadow-around rounded-lg">
             {!showForm ? (
-              <div className=" flex flex-col items-center">
+              <div className=" flex flex-col items-center py-4">
                 <div className="px-8 md:px-12">
                   <h3 className="text-[32px] font-bold text-[#2b044d] text-center">
                     Live Video Chat
