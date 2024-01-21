@@ -57,6 +57,7 @@ export default function Home() {
             <div className="mt-6 flex justify-center items-center gap-[48px]">
               <button
                 type="button"
+                onClick={() => setShowCall(false)}
                 className="w-10 h-10 rounded-full bg-[#4FA74F]"
               ></button>
               <button
