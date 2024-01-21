@@ -42,7 +42,7 @@ function Security({ setShowModal }) {
   };
 
   return (
-    <div className="">
+    <div className="w-[448px] px-10 pt-[54px] bg-white text-black rounded">
       <Formik
         initialValues={initialvalues}
         // validationSchema={validate}
@@ -50,18 +50,18 @@ function Security({ setShowModal }) {
       >
         {(formik) => (
           <Form className="">
-            <div className="px-8 py-4 lg:py-7 bg-white text-black rounded">
-              <h2 className="text-2xl font-medium">Device Verification 1/2</h2>
-              <p className="mt-6">
+            <div className="">
+              <h2 className="text-2xl">Device Verification 1/2</h2>
+              <p className="mt-1">
                 We have just sent a Verification Code to email address provided
                 {/* <strong> email@email.com</strong> */}
                 <strong> {email}</strong>
               </p>
 
-              <div className="my-5 flex justify-center">
-                <div className="w-full lg:w-[320px]">
+              <div className="mt-5 flex justify-center">
+                <div className="w-full">
                   <Field
-                    className="w-full text-lg px-[8px] py-[7px] outline-none border border-slate-300 shadow-inner placeholder:font-medium placeholder:text-black/50"
+                    className="w-full text-lg px-3 py-3 outline-none border border-slate-300 shadow-inner placeholder:font-medium placeholder:text-black/50"
                     name="skipcode"
                     placeholder="Enter Code Here"
                     type="text"
@@ -71,20 +71,25 @@ function Security({ setShowModal }) {
                 </div>
               </div>
 
-              <p className="pt-2">
+              <p className="mt-2">
                 No Code received yet?{" "}
-                <span className="text-custom-amber cursor-pointer underline">
-                  Resend
-                </span>
+                <span className="text-amber-500 cursor-pointer">Resend</span>
               </p>
-              <p className="">
+              <p className="mt-3">
                 Having trouble with receiving the Code, You can contact the{" "}
-                <span className="text-custom-amber cursor-pointer underline">
-                  Support
-                </span>
+                <span className="text-amber-500 cursor-pointer">Support</span>
               </p>
 
-              <div className="flex gap-4 justify-end">
+              <div className="mt-[50px] mb-[100px]">
+                <button
+                  type="submit"
+                  className="px-3 py-1.5  bg-transparent text-amber-500 border border-amber-500 rounded hover:bg-amber-500 hover:text-white transition-colors duration-200"
+                >
+                  Next
+                </button>
+              </div>
+
+              {/* <div className="mt-[60px] mb-[120px] flex gap-4 justify-end">
                 <button
                   type="button"
                   className="px-[22px] py-2 mt-5 w-full text-lg font-medium bg-[#2ba6cb] hover:bg-custom-cyan2 text-white transition duration-300 rounded"
@@ -98,7 +103,7 @@ function Security({ setShowModal }) {
                 >
                   Verify
                 </button>
-              </div>
+              </div> */}
             </div>
           </Form>
         )}

@@ -71,39 +71,45 @@ export default function Home() {
             </div>
           </div>
         ) : (
-          <div className=" bg-white md:w-[400px] shadow-around rounded-lg">
+          <>
             {!showForm ? (
-              <div className=" flex flex-col items-center py-4">
-                <div className="px-8 md:px-12">
-                  <h3 className="text-[32px] font-bold text-[#2b044d] text-center">
-                    Live Video Chat
-                  </h3>
+              <div className="bg-white md:w-[400px] shadow-around rounded-lg">
+                <div className=" flex flex-col items-center py-4">
+                  <div className="px-8 md:px-12">
+                    <h3 className="text-[32px] font-bold text-[#2b044d] text-center">
+                      Live Video Chat
+                    </h3>
 
-                  <p className="mt-[15px] text-lg leading-tight font-medium ">
-                    Login with erosads and enjoy with{" "}
-                    <span className="text-[#2b044d] font-bold">
-                      Private Live Video Chat
-                    </span>{" "}
-                    your dating partner.
-                  </p>
-                </div>
+                    <p className="mt-[15px] text-lg leading-tight font-medium ">
+                      Login with erosads and enjoy with{" "}
+                      <span className="text-[#2b044d] font-bold">
+                        Private Live Video Chat
+                      </span>{" "}
+                      your dating partner.
+                    </p>
+                  </div>
 
-                <div className="mt-[35px] mb-10 px-4 md:px-12 flex w-full font-serif">
-                  <button
-                    className="bg-[#990033] text-white text-lg lg:text-[22px] flex items-center gap-10 lg:gap-5 px-5 py-[6px] rounded-md w-full"
-                    onClick={() => setShowForm(true)}
-                  >
-                    <div className="relative rounded-md w-8 h-8">
-                      <Image src="/favicon.ico" fill className="object-cover" />
-                    </div>
-                    <p className="">Login with ErosAds</p>
-                  </button>
+                  <div className="mt-[35px] mb-10 px-4 md:px-12 flex w-full font-serif">
+                    <button
+                      className="bg-[#990033] text-white text-lg lg:text-[22px] flex items-center gap-10 lg:gap-5 px-5 py-[6px] rounded-md w-full"
+                      onClick={() => setShowForm(true)}
+                    >
+                      <div className="relative rounded-md w-8 h-8">
+                        <Image
+                          src="/favicon.ico"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <p className="">Login with ErosAds</p>
+                    </button>
+                  </div>
                 </div>
               </div>
             ) : (
               <Login />
             )}
-          </div>
+          </>
         )}
       </div>
     </div>

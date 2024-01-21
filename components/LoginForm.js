@@ -27,7 +27,7 @@ function LoginForm({ setShowModal }) {
   };
 
   return (
-    <div className="px-5  pb-5 bg-[#212529] py-4">
+    <div className="px-5 pb-5 py-4 w-[400px] bg-[#212529] shadow-lg rounded-lg">
       <h3 className="flex justify-center text-[25px] font-bold text-white lg:text-left">
         Log in to your account
       </h3>
